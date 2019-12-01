@@ -1,15 +1,13 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { Home } from './pages/Home';
-import Contact from './pages/Contact';
-import SignInForm from './form';
+import { SignInForm, SignUpForm } from './form';
 
+// // exact path  must be mentioned first
 const routes = () => (
-<Switch>
-    <Route exact path='/home' component={Home} />
-    <Route path='/contact' component={Contact} />
-    <Route path='' component={SignInForm} />
-</Switch>
+    <Switch>
+        <Route exact path='/signup' component={SignUpForm} />
+        <Route path='' component={SignInForm} />
+    </Switch>
 )
 
 export default routes

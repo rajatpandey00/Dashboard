@@ -1,3 +1,4 @@
-import { SignInForm } from './sign-in'
+import SignInForm from './sign-in'
+import SignUpForm from './sign-up'
 
-export default SignInForm
+export { SignInForm, SignUpForm }
